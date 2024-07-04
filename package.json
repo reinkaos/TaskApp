@@ -2,8 +2,8 @@
   "name": "notes-App",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\""
-    "build": "vite build"
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\"",
+    "build": "vite build",
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
