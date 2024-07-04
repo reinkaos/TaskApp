@@ -1,0 +1,13 @@
+.createContainer {
+  margin: 2%;
+  padding: 0 15% 0 0;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.darkCard {
+  background-color: #000000;
+  color: white;
+}

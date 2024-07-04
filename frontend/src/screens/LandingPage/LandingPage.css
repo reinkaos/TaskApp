@@ -1,0 +1,10 @@
+.main {
+  min-height: 72vh;
+  text-align: center;
+  align-items: center;
+  background-image: url(goblin.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
