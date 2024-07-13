@@ -8,7 +8,7 @@ import {
   USER_REGISTRATION_REQUEST,
   USER_REGISTRATION_SUCCESS,
 } from "../constants/userConstants";
-
+const BASE_URL = process.env.REACT_APP_API_URL;
 export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGIN_REQUEST });
@@ -20,7 +20,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/login",
+      `${BASE_URL}/api/users/login`,
       { email, password },
       config
     );
@@ -57,7 +57,7 @@ export const register = (name, email, password, pic) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/register",
+      `${BASE_URL}/api/users/register`,
       { name, email, password, pic },
       config
     );
