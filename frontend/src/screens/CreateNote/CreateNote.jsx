@@ -97,15 +97,13 @@ const CreateNote = () => {
               </Button>
             </Form>
           </Card.Body>
-          <Card.Footer
-            className="bg-primary "
-            style={{ padding: "2%", borderRadius: "8px" }}
-          >
-            <Card.Title style={{ textAlign: "center" }}>Preview</Card.Title>
-            <Card.Text as="div">
-              <ReactMarkdown>{content}</ReactMarkdown>
-            </Card.Text>
-          </Card.Footer>
+        </Card>
+        <Card className="p-4 shadow-sm darkCard mt-3">
+          <Card.Header>Note Preview</Card.Header>
+          <Card.Body>
+            <h5>{title}</h5>
+            <ReactMarkdown>{content}</ReactMarkdown>
+          </Card.Body>
         </Card>
       </div>
     </Main>

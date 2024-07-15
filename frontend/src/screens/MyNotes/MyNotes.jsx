@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteNote, listNotes } from "../../actions/noteActions";
 import DeletePrompt from "../../components/DeletePrompt";
-
+import ReactMarkdown from "react-markdown";
 const MyNotes = ({ search }) => {
   const dispatch = useDispatch();
   const noteList = useSelector((state) => state.noteList);
@@ -108,7 +108,9 @@ const MyNotes = ({ search }) => {
                     <hr />
                     Content:
                   </Card.Subtitle>
-                  <Card.Text>{note.content}</Card.Text>
+                  <Card.Text>
+                    <ReactMarkdown>{note.content}</ReactMarkdown>
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="text-muted">
                   {note.updatedAt

@@ -119,6 +119,13 @@ const SingleNote = () => {
             Updated on: {formatDate(date)}
           </Card.Footer>
         </Card>
+        <Card className="p-4 shadow-sm darkCard mt-3">
+          <Card.Header>Note Preview</Card.Header>
+          <Card.Body>
+            <h5>{title}</h5>
+            <ReactMarkdown>{content}</ReactMarkdown>
+          </Card.Body>
+        </Card>
       </div>
     </Main>
   );
