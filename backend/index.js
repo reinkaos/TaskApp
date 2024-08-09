@@ -1,5 +1,5 @@
 const express = require("express");
-const notes = require("./data/notes");
+const notes = require("./data/notes");//test data
 const dotenv = require("dotenv");
 const userRoutes = require("./routes/userRoutes");
 const noteRoutes = require("./routes/noteRoutes");
