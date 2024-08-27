@@ -8,7 +8,6 @@ import {
   USER_REGISTRATION_REQUEST,
   USER_REGISTRATION_SUCCESS,
 } from "../constants/userConstants";
-//c
 const API_URL = process.env.REACT_APP_API_URL;
 
 export const login = (email, password) => async (dispatch) => {
